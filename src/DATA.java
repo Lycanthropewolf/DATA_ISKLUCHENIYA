@@ -22,13 +22,13 @@ public class DATA {
             String login, String password, String confirmPassword)
             throws WrongLoginException, WrongPasswordException {
         if (!validate(login)) {
-            throw new WrongLoginException(" логин неправильный");
+            throw new WrongLoginException("логин неправильный");
         }
         if (!validate(password)) {
-            throw new WrongPasswordException(" пароль неправильный");
+            throw new WrongPasswordException("пароль неправильный");
         }
         if (!password.equals(confirmPassword)){
-            throw new WrongPasswordException(" Пароли должны совпадать");
+            throw new WrongPasswordException("Пароли должны совпадать");
         }
 
     }
